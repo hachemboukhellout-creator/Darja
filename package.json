@@ -1,0 +1,6 @@
+{
+  "name": "darja-commerce", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": {"dev":"concurrently -k \"node --watch server/index.js\" \"vite --host 0.0.0.0\"", "build":"tsc -b && vite build", "start":"NODE_ENV=production node server/index.js", "test":"node --test tests/*.test.js", "test:e2e":"playwright test", "check":"tsc -b"},
+  "dependencies": {"react":"^19.1.0", "react-dom":"^19.1.0", "lucide-react":"^0.468.0", "express":"^5.1.0", "helmet":"^8.1.0", "express-rate-limit":"^7.5.0", "cookie-parser":"^1.4.7", "zod":"^3.25.0"},
+  "devDependencies":{"@types/react":"^19.1.0","@types/react-dom":"^19.1.0","@vitejs/plugin-react":"^4.5.0","typescript":"~5.8.3","vite":"^6.3.5","concurrently":"^9.1.2","supertest":"^7.1.0","@playwright/test":"^1.52.0"}
+}
